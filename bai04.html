@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function totalDuongcheo(a) {
+        let dan=[];
+        let total='';
+        for (i=0;i<a;i++) {
+            dan[i] = [];
+            for (j=0;j<a;j++) {
+                dan[i][j] = prompt('phần tử ở vị trí ['+i+']['+j+'] : ')
+            }
+        } console.log(dan)
+        for (i=0;i<a;i++) {
+            for (j=0;j<a;j++) {
+                if (i==j) {
+                    total+=dan[i][j];
+                }
+            }
+        } console.log(total);
+    }
+    totalDuongcheo(4);
+</script>
+</body>
+</html>

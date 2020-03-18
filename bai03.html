@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hàm tính tuổi của 1 người</h1>
+<br>
+<hr>
+<br>
+<input type="text" id="input"> Nhập năm sinh của bạn
+<br>
+<br>
+<button onclick="age()" >Tính</button>
+<br>
+<br>
+<p id="result">Kết quả : </p>
+<script>
+    function age() {
+        let a=document.getElementById('input').value;
+        a = parseInt(a);
+        if (a<=2020) {
+            let b= 2020 - a;
+            document.getElementById('result').innerHTML+=b +'tuổi';
+        }
+        else    {
+            alert('nhập lại năm sinh')
+        }
+    }
+</script>
+</body>
+</html>

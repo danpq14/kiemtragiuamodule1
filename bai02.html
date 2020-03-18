@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hàm tính tổng các số lẻ trong dãy</h1>
+<br>
+<hr>
+<input type="text" id="start"> Số bắt đầu của mảng
+<br>
+<br>
+<input type="text" id="end">Số cuối cùng của mảng
+<br>
+<br>
+<button onclick="totalOdd()">tính</button>
+<br>
+<p id="result">Kết quả</p>
+<script>
+    function totalOdd() {
+        let n1=document.getElementById('start').value;
+        n1 = parseInt(n1);
+        let n2=document.getElementById('end').value;
+        n2=parseInt(n2);
+        let total=0;
+        for (i=n1;i<=n2;i++) {
+            if (i%2 !== 0) {
+                total=total + i;
+            }
+        } document.getElementById('result').innerHTML=total;
+    }
+</script>
+</body>
+</html>
